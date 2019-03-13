@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
+gem 'pry-byebug'
 # Add default group gems to `metasploit-framework.gemspec`:
 #   spec.add_runtime_dependency '<name>', [<version requirements>]
 gemspec name: 'metasploit-framework'
+
 
 gem 'sqlite3', '~>1.3.0'
 
@@ -22,7 +24,7 @@ group :development do
   gem 'octokit'
   # Metasploit::Aggregator external session proxy
   # disabled during 2.5 transition until aggregator is available
-  #gem 'metasploit-aggregator'
+  gem 'metasploit-aggregator'
 end
 
 group :development, :test do
